@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d975e3;
+        }
+
+        #time {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            width: 600px;
+            /* background-color: black; */
+            color: white;
+            font-size: 65px;
+            text-align: center;
+            gap: 20px;
+            
+        }
+        h1{
+            font-size: 30px;
+            background-color: #e4afea;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 20px 15px -13px rgba(47, 40, 40, 0.8)
+        }
+        #main-div{
+            display: flex;
+            flex-direction: row;
+            width: 600px;
+            height: 10%;
+            font-size: 30px;
+            justify-content: space-around;
+            gap: 13px;
+        }
+        .design{
+            padding: 13px;
+            background-color: #992e9b;
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 15px -13px rgba(47, 40, 40, 0.8);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>CountDown Begins</h1>
+        <p id="time"></p>
+        <div id="main-div">
+            <p class="design">Days</p>
+            <p class="design">Hours</p>
+            <p class="design">Mins</p>
+            <p class="design">Sec</p>
+        </div>
+    </div>
+
+    <script src="./timer.js"></script>
+</body>
+
+</html>
